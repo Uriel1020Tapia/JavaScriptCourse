@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+    <style>
+        :root {
+            --primary-color: #2e2e2e;
+            --secondary-color: #ffd571;
+        }
+
+        .cards {
+            border: 1px solid var(--primary-color);
+            padding: 1rem;
+        }
+
+        .card {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+        }
+
+        .card figcaption {
+            padding: 1rem;
+        }
+
+        .rotate-45 {
+            transform: rotate(45deg);
+        }
+
+        .rotate-135 {
+            transform: rotate(135deg);
+        }
+
+        .opacity-80 {
+            opacity: .8;
+        }
+
+        .sepia {
+            filter: sepia(1);
+        }
+        .events-flujo div{
+            padding: 4rem;
+            font-size: 2rem;
+            text-align: center;
+        }
+        .uno{
+            background-color: red;
+        }
+        .dos{
+            background-color: purple;
+        }
+        .tres{
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>Manejo del DOM</h3>
+    <hr>
+    <p id="que-es">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae aspernatur impedit deserunt earum
+        voluptatem totam veritatis consectetur deleniti itaque dolorum! Ex provident dolorem officia amet! Optio ipsa
+        eius hic assumenda!
+    </p>
+    <nav id="menu">
+        <ul>
+            <li><a href="./dom-ejercicios.html">Menú Hamburger</a></li>
+            <li><a href="#">Seccion 2</a></li>
+            <li><a href="#">Seccion 3</a></li>
+            <li><a href="#">Seccion 4</a></li>
+            <li><a href="#">Seccion 5</a></li>
+        </ul>
+    </nav>
+    <input type="text" name="name" placeholder="Name">
+    <a href="index.html" class="link-dom" data-description="Document Object Model"
+        style="background-color: crimson; color: #000;">DOM 😎</a>
+    <section class="cards">
+        <figure class="card">
+            <img src="https://placeimg.com/200/200/tech" alt="tech">
+            <figcaption>tech</figcaption>
+        </figure>
+        <figure class="card">
+            <img src="https://placeimg.com/200/200/animals" alt="Animals">
+            <figcaption>Animals</figcaption>
+        </figure>
+        <figure class="card">
+            <img src="https://placeimg.com/200/200/people" alt="People">
+            <figcaption>People</figcaption>
+        </figure>
+        <figure class="card">
+            <img src="https://placeimg.com/200/200/arch" alt="arch">
+            <figcaption>arch</figcaption>
+        </figure>
+        <figure class="card">
+            <img src="https://placeimg.com/200/200/nature" alt="nature">
+            <figcaption>Nature</figcaption>
+        </figure>
+    </section>
+    <template id="template-card">
+        <figure class="card">
+            <img>
+            <figcaption></figcaption>
+        </figure>
+    </template>
+    <h3>Eventos en javascript</h3>
+    <h4>Manejadores de eventos</h4>
+    <button class="btn" onclick="showMessage('Hola mundo!')">Evento con attributo HTML</button><br><br>
+    <button id="event-semantic">Evento con manejador semántico</button><br><br>
+    <button id="event-multiple">Evento con manejador multiple</button><br><br>
+    <button id="event-remove">Evento remover</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h4>flujo de eventos</h4>
+    <section class="events-flujo">
+        <div class="uno">
+            1 
+            <div class="dos">
+                2
+                <div class="tres">
+                    3
+                    <a href="https://es-la.facebook.com/" target="_blank" rel="noopener">fb</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>   <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3 style="width: 2000px;">Manejo del BOM (BROWSER OBJECT MODEL)</h3>
+
+    <button id="open-window">Open window</button>
+    <br><br>
+    <button id="close-window">Close Window</button>
+    <br><br>
+    <button id="screen-window">Screen window</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <script src="./js/dom.js"></script>
+    
+</body>
+
+</html>

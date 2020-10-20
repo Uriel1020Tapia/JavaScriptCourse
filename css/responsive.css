@@ -1,0 +1,119 @@
+/*  RESPONSIVE
+========================================================================= 
+Escritorios muy grandes
+------------------------------------------------------------------------- */
+@media (min-width: 1200px) { 
+    /* scrollSpy */
+    body{
+        display: grid;
+        grid-template-columns: 80% 20%;
+        /* grid-template-rows: auto 70px auto auto ; */
+        grid-template-areas: 
+            "banner-header banner-header"
+            "header header"
+            "main panel"
+            "footer footer";
+    }
+
+    main{
+        grid-area: main;
+        /* background: #000; */
+    }
+    .header{
+        grid-area: header;
+    }
+    .panel{
+        grid-area:panel;
+        align-self: flex-start;
+        position: sticky;
+        top: 130px;
+        justify-content: flex-start;
+        transform: translate(0, 0);
+        opacity: 1;
+        visibility: visible;
+        z-index: 0;
+        max-height: 100%;
+    }
+    .panel-btn{
+        display: none;
+    }
+    .menu{
+        justify-content: start;
+        text-align: right;
+    }
+    .menu a{
+        font-size: 1rem;
+        padding:0.75rem;
+    }
+    .menu a:hover,
+    .menu a.active {
+        font-weight: bold;
+        color: var(--second-color);
+        background-color: var(--main-color);
+      }
+    .scroll-top-btn {
+        right: initial;
+        left: calc(4.25rem + 1vw);
+    }
+    .banner-header{
+        grid-area: banner-header;
+    }
+    .footer{
+        grid-area:footer;
+    }
+
+}   
+
+   /* Tablets en horizonal y escritorios normales
+      ------------------------------------------------------------------------- */
+@media (min-width: 768px) and (max-width: 1199px) { 
+
+}   
+@media screen and (min-width:600px){
+    .r-footer >*{
+        flex: 1 !important;
+    }
+    /* .features{
+        flex-grow: 2 !important;
+    
+    } */
+    .l-footer{
+        flex: 1 0px !important;
+    }
+    
+    .r-footer{
+        flex: 2 0px !important;
+
+    }
+}
+@media (max-width: 767px) { 
+
+    main section{
+        background: red;
+    }
+    .content-images {
+        height: 240px;
+    }
+    ._content-logo-pnt .img-logo {
+        width: 60%;
+    }
+
+}   
+
+@media (max-width: 480px) {  
+    main section{
+        background: blue;
+    }
+    .content-images {
+        height: 190px;
+    }
+    ._content-logo-pnt .img-logo {
+        width: 80%;
+        height: 95%;
+    }
+    #countDown h3{
+        font-size: 2em;
+        font-weight: 600;
+        line-height: 2.5em;
+    }
+}

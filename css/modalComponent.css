@@ -1,0 +1,172 @@
+.btn-modal{
+    transition:all .5s;
+    font-size:20px;
+    display: inline-flex;
+    border:1px solid;
+    margin:48px 16px;
+    padding:8px 16px;
+    border-radius: 4px;
+    box-shadow: 
+        0px 2px 4px -1px rgba(0,0,0,.2),
+        0px 4px 5px 0px rgba(0,0,0,.14),
+        0px 1px 10px 0px rgba(0,0,0,.12);
+}
+.btn-modal:hover{
+    background: #f2f3f5;
+}
+
+/* component modal */
+.modal-animated, .modal-animated > .cancel{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+}
+.modal-animated{
+    transition: all .5s;
+    visibility: hidden;
+    opacity: 0;
+}
+.modal-animated > .cancel{
+    background: rgba(0,0,0,0.32);
+    z-index: 2;
+    cursor: default;
+}
+.modal-animated > .popup{
+    transition: all .5s;
+    background: #fff;
+    padding:8px;
+    position: absolute;
+    z-index: 3;
+    width: 40%;
+    max-width: 80%;
+    border-radius: 4px;
+   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);  
+}
+.modal-lg{
+  width: 80% !important;
+}
+.modal-md{
+  width: 60% !important;
+}
+.modal-sm{
+  width: 40% !important;
+}
+.modal-animated > .popup.-fade{
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: translateY(-50%);
+}
+.modal-animated > .popup.-slideInTop{
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.modal-animated > .popup.-slideInDown {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,50%);
+}
+.modal-animated > .popup.-slideInLeft {
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+  }
+.modal-animated > .popup.-slideInRight {
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+  }
+  .modal-animated:target{
+      visibility: visible;
+      opacity: 1;
+  }
+  .modal-animated .showModal{
+    visibility: visible;
+    opacity: 1;
+  }
+  .modal-animated:target .-slideInTop {
+    top: 50%;
+  }
+  .modal-animated:target .-slideInDown {
+    bottom: 50%;
+  }
+  .modal-animated:target .-slideInLeft {
+    left: 50%;
+  }
+  .modal-animated:target .-slideInRight {
+    right: 50%;
+  }
+
+  .modal-animated .close{
+      transition:all .5s;
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      padding: 8px;
+      border-radius: 4px;
+      border: 0;
+      cursor: pointer;
+
+  }
+  .modal-animated .close:hover {
+    background: #f2f3f5;
+  }
+  .modal-animated .content{
+      text-align:left;
+      padding:16px;
+  }
+  .modal-animated .center{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .modal-animated .content > .title{
+      width: 86%;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1;
+  }
+  .modal-animated .content > .subtitle {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 8px;
+  }
+  .modal-animated .content > .description {
+    font-size: 16px;
+    margin-top: 16px;
+  }
+
+  .modal-animated .action{
+      transition: all .5s;
+      padding:8px 16px;
+      font-size:14px;
+      font-weight: 700;
+      float: right;
+      border-radius: 4px;
+      margin-left: 8px;
+      border: none;
+      cursor: pointer;
+  }.modal-animated .action.-red {
+    color: #d93025;
+  }
+  .modal-animated .action.-red:hover {
+    background: #fce8e6;
+  }
+  .modal-animated .action.-green {
+    color: #34a853;
+  }
+  .modal-animated .action.-green:hover {
+    background: #e6f4ea;
+  }
+
+  
+
+
+ 
